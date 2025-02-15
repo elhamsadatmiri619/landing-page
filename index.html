@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>هدایت تصادفی به فرم‌ها</title>
+    <script>
+        window.onload = function(){
+            // آرایه حاوی لینک‌های فرم شما
+            var links = [
+                "https://link-to-form1.com",
+                "https://link-to-form2.com",
+                "https://link-to-form3.com",
+                "https://link-to-form4.com"
+            ];
+            // انتخاب تصادفی یک لینک از آرایه
+            var chosen = links[Math.floor(Math.random() * links.length)];
+            // هدایت کاربر به لینک انتخاب شده
+            window.location.href = chosen;
+        };
+    </script>
+</head>
+<body>
+    <p>اگر به صورت خودکار هدایت نشدید، <a href="https://link-to-form1.com">اینجا کلیک کنید</a>.</p>
+</body>
+</html>
